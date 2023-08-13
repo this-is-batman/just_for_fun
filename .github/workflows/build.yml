@@ -3,7 +3,7 @@ name: Continous Integration
 on:
   push:
     branches:
-      - github_actions
+      - main
 
 jobs:
   ubuntu-focal-make:
