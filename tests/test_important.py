@@ -3,8 +3,6 @@ test_important.py: Script to test the pytest fixture which has been introduced i
 Author: Abhirup Gupta
 '''
 
-import pytest
-
 def get_sum(a):
     return sum(a)
 
