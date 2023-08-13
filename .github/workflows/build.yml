@@ -1,0 +1,23 @@
+name: Continous Integration
+
+on:
+  push:
+    branches:
+      - github_actions
+
+jobs:
+  ubuntu-focal-make:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Clone
+        id: checkout
+        uses: actions/checkout@v3
+
+      - name: python_install
+        id: req_install
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.4'
+          cache: 'pip'
+      - run: pip install -r requirements.txt && pytest -v
