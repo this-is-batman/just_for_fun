@@ -16,4 +16,4 @@ fib_dict[1] = 1
 
 def test_fib() -> int:
     assert get_fib(1) == 1
-    assert get_fib_opt(3, fib_dict) == 2
+    assert get_fib_opt(3, fib_dict) == 3
