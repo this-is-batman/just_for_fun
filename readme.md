@@ -15,6 +15,8 @@ import nltk
 nltk.download({package_name}, download_dir = '~/home/user_name/nltk_data/')
 ```
 
+## Added CI/CD workflow through Github actions
+Added CI/CD integration with Github using Github Actions. The github actions workflow is defined in the file `.github/workflows/build.yml`. Further improvements will be made to the workflow file in future iterations.
 
 **Future**: In future, or whenever I wish, I also wish to write some codes in C++ or in C, and store it in github for posterity.
 
