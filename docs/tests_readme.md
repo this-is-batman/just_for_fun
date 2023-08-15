@@ -1,6 +1,6 @@
 # Testing Directory
 
-This directory is used for `testing` purposes.  Here, we have written some unit tests, taking the help of **pytest fixtures** and **pytest**.
+This directory `tests` is used for `testing` purposes.  Here, we have written some unit tests, taking the help of **pytest fixtures** and **pytest**.
 
 Some key points to remember here - 
 
