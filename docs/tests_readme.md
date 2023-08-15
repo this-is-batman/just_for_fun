@@ -10,5 +10,5 @@ Some key points to remember here -
 
 * The testing modules should be present in the `/tests` directory, with the name starting with `test_*`, so that pytest can automatically figure out which are the test scripts which need to be run. 
 
-* The name of the function inside the `testing` scripts, which are used for testing should also be prefixed using `test_*`.
+* The name of the function inside the `testing` scripts, which are used for testing should also be prefixed using `test_`.
 
