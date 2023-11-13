@@ -9,6 +9,7 @@ path = os.path.abspath(__file__)
 source_code_location = os.path.dirname(os.path.dirname(path))
 sys.path.append(source_code_location + "/src/")
 from static_methods import Task
+from declarators import get_sum_list, get_sum_list_opt
 
 def get_sum(a):
     return sum(a)
@@ -23,4 +24,8 @@ def test_get_sum(int_list):
 def test_static_methods():
     assert Task.get_cube(3) == 27
     assert Task.get_square(2) == 4
+
+def test_list_opt(int_list):
+    assert get_sum_list(int_list, int_list) >= get_sum_list_opt(int_list, int_list)
+
 
