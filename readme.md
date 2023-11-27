@@ -21,3 +21,24 @@ Added CI/CD integration with Github using Github Actions. The github actions wor
 **Future**: In future, or whenever I wish, I also wish to write some codes in C++ or in C, and store it in github for posterity.
 
 **Disclaimer**: For now, this is meant to be a private repository. At any point in the future though, it may be made public according to my wishes.
+
+## Added dockerfile
+
+Added a `Dockerfile` which contained instructions about creating a docker image, and a docker container to run the scripts in this repository. Doing this to get used to `containerization` and deploying applications inside a container. 
+
+We can use the following commands to use this Dockerfile - 
+
+```
+docker build -t {name_of_the_image} .
+```
+The above command will be used to create an image.
+
+To create a `container` from that image, we will use the following command - 
+
+```
+docker run -it --rm just_for_fun_img
+```
+
+The above command will spawn a container from that image and then delete the container on succesful completion.
+
+Go to this [link](https://docs.docker.com/engine/reference/commandline/cli/) to learn more about Docker CLI.
