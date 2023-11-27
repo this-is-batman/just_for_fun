@@ -8,6 +8,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["bash", "./shell_scripts/run.sh"]
+EXPOSE 18000
+
+ENTRYPOINT [ "bash", "./shell_scripts/run.sh"]
+
 
 
