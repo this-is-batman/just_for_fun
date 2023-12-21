@@ -3,13 +3,11 @@ test_important.py: Script to test the pytest fixture which has been introduced i
 Author: Abhirup Gupta
 '''
 
-import sys
 import os.path
 path = os.path.abspath(__file__)
 source_code_location = os.path.dirname(os.path.dirname(path))
-sys.path.append(source_code_location + "/src/")
-from static_methods import Task
-from declarators import get_sum_list, get_sum_list_opt
+from src.static_methods import Task
+from src.declarators import get_sum_list, get_sum_list_opt
 
 def get_sum(a):
     return sum(a)
